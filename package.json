@@ -1,0 +1,20 @@
+{
+  "name": "apnacollege-backend",
+  "version": "1.0.0",
+  "description": "Learning Backend from Apna College",
+  "homepage": "https://github.com/its-ruhul/ApnaCollege-Backend#readme",
+  "bugs": {
+    "url": "https://github.com/its-ruhul/ApnaCollege-Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/its-ruhul/ApnaCollege-Backend.git"
+  },
+  "license": "ISC",
+  "author": "Ruhul Amin",
+  "type": "module",
+  "main": "math.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
