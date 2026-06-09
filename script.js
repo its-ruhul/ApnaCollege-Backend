@@ -9,6 +9,10 @@
 //   console.log("Hello", args[i]);
 // }
 
-const someValue = require("./math");
+// const someValue = require("./math");
 
-console.log(someValue);
+// console.log(someValue);
+
+const info = require("./fruits");
+
+console.log(info);
