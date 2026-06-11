@@ -10,5 +10,7 @@ app.listen(port, () => {
 });
 
 app.use((req, res) => {
+  // console.log(req);
   console.log("request received");
-})
+  res.send("<h1>Fruits</h1> <ul><li>Banana</li><li>Apple</li></ul>");
+});
