@@ -35,15 +35,23 @@ app.get("/:username/:id", (req, res) => {
   res.send(htmlStr);
 });
 
+app.get("/search", (req, res) => {
+  let {q}  = req.query;
 
-
-app.use((req, res) => {
-  res.status(404).send("ERROR 404: This page doesn't exist.");
+  if(!q){
+    res.send(`Nothing Searched`);
+  }
+  else {
+    res.send(`Search results for query: ${q}`);
+  }
 });
-
 
 // app.use((req, res) => {
 //   // console.log(req);
 //   console.log("request received");
 //   res.send("<h1>Fruits</h1> <ul><li>Banana</li><li>Apple</li></ul>");
 // });
+
+app.use((req, res) => {
+  res.status(404).send("ERROR 404: This page doesn't exist.");
+});
